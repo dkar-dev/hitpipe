@@ -1,10 +1,11 @@
 package logger
 
 import (
-	"github.com/lmittmann/tint"
 	"log/slog"
 	"os"
 	"time"
+
+	"github.com/lmittmann/tint"
 )
 
 const (
@@ -15,6 +16,7 @@ const (
 )
 
 func NewLogger(env string, level string) *slog.Logger {
+
 	var log *slog.Logger
 
 	var logLevel slog.Level

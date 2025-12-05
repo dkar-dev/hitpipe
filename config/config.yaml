@@ -13,3 +13,11 @@ postgres:
 
 logger:
   level: ${LOGGER_LEVEL:debug}
+
+notifier:
+  email:
+    from: ${NOTIFIER_EMAIL_FROM}
+    password: ${NOTIFIER_EMAIL_PASSWORD}
+    host: "smtp.gmail.com"
+    port: 587
+
